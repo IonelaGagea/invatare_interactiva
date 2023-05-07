@@ -1,0 +1,21 @@
+spring:
+  datasource:
+    username: postgres
+    password: postgres
+    url: jdbc:postgresql://localhost:5432/interactiva
+    driver-class-name: org.postgresql.Driver
+  jpa:
+    hibernate:
+      ddl-auto: update
+    database-platform: org.hibernate.dialect.PostgreSQLDialect
+  servlet:
+    multipart:
+      max-request-size: 500MB
+      max-file-size: 500MB
+
+jwt:
+  secret: Swx5Z0IvuDk6NkBHUQoGWofrkXCArxNhpZITn9KN2wbtbXbXXLX4s9R6c5dXDE0r
+  accessTokenExpiration: 864000000
+  refreshTokenExpiration: 604800000
+
+
